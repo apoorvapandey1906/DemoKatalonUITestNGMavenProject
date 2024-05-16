@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public interface Home {
 
-    public  WebDriver driver;
+  //  public  WebDriver driver ;
 
     public WebElement menuToggle = (WebElement) By.id("menu-toggle");
 
@@ -22,6 +22,6 @@ public interface Home {
 
     public default void initialize(WebDriver driver){
         PageFactory.initElements(driver,this);
-        this.driver = driver;
+    //    this.driver = driver;
     }
 }
