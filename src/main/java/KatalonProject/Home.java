@@ -20,6 +20,9 @@ public interface Home {
 
     public WebElement makeAppointmentButton = (WebElement) By.id("btn-make-appointment");
 
+    public WebElement CURAHealthCareToggleHeader = (WebElement) By.xpath("//a[text()='CURA Healthcare']");
+    public WebElement LoginLink = (WebElement) By.xpath("//a[text()='Login']");
+
     public default void initialize(WebDriver driver){
         PageFactory.initElements(driver,this);
     //    this.driver = driver;
